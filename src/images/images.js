@@ -10,7 +10,7 @@ export const bannerimage1 = require('../assets/img/banner-image1.png');
 export const bannerimage2 = require('../assets/img/banner-image2.png');
 export const bannerimage3 = require('../assets/img/banner-image3.png');
 export const bannerimage4 = require('../assets/img/banner-image4.png');
-export const bannerimage5 = require('../assets/img/banner-image5.png');
+
 export const aboutbanner = require('../assets/img/about-banner.png');
 export const programmesbanner = require('../assets/img/programmes-banner.png');
 export const contactbanner = require('../assets/img/contact-banner.png');
@@ -28,7 +28,14 @@ export const historybanner = require('../assets/img/history-banner.png');
 
 export const aboutimg = require('../assets/img/about-img.png');
 export const purposeimg = require('../assets/img/purpose-img.png');
-export const ourvalueimg = require('../assets/img/ourvalues-img.png');
+export const ourvalueimg1 = require('../assets/img/ourvalues-img1.png');
+export const ourvalueimg2 = require('../assets/img/ourvalues-img2.png');
+export const ourvalueimg3 = require('../assets/img/ourvalues-img3.png');
+export const ourvalueimg4 = require('../assets/img/ourvalues-img4.png');
+export const ourvalueimg5 = require('../assets/img/ourvalues-img5.png');
+export const ourvalueimg6 = require('../assets/img/ourvalues-img6.png');
+
+
 export const approachimg = require('../assets/img/approach-img.png');
 export const theoryofchangeimg = require('../assets/img/theoryofchange-img.png');
 export const organizationstructureimg = require('../assets/img/organizationstructure-img.png');
@@ -63,7 +70,6 @@ export const partnrlogo7 = require('../assets/img/partnr-logo7.png');
 export const partnrlogo8 = require('../assets/img/partnr-logo8.png');
 
 export const ttmicn = require('../assets/img/ttm-icn.png');
-export const innerbanner = require('../assets/img/inner-banner.png');
 export const historyimg = require('../assets/img/history-img.png');
 
 export const galryimg1 = require('../assets/img/galry-img1.png');
@@ -83,6 +89,8 @@ export const galryimage8 = require('../assets/img/galry-image8.png');
 export const galryimage9 = require('../assets/img/galry-image9.png');
 export const galryimage10 = require('../assets/img/galry-image10.png');
 export const galryimage11 = require('../assets/img/galry-image11.png');
+export const galryimage12 = require('../assets/img/galry-image12.png');
+
 
 export const galryimagel1 = require('../assets/img/galry-image-large1.png');
 export const galryimagel2 = require('../assets/img/galry-image-large2.png');
@@ -95,6 +103,8 @@ export const galryimagel8 = require('../assets/img/galry-image-large8.png');
 export const galryimagel9 = require('../assets/img/galry-image-large9.png');
 export const galryimagel10 = require('../assets/img/galry-image-large10.png');
 export const galryimagel11 = require('../assets/img/galry-image-large11.png');
+export const galryimagel12 = require('../assets/img/galry-image-large12.png');
+
 
 
 export const progmimg1 = require('../assets/img/progm-img1.png');
@@ -106,6 +116,11 @@ export const progmimg6 = require('../assets/img/progm-img6.png');
 
 
 export const acknowimg1 = require('../assets/img/acknow-img1.png');
+export const acknowimgnews1 = require('../assets/img/acknow-imgnews1.png');
+export const acknowimgnews2 = require('../assets/img/acknow-imgnews2.png');
+export const acknowimgnews3 = require('../assets/img/acknow-imgnews3.png');
+export const acknowimgnews4 = require('../assets/img/acknow-imgnews4.png');
+
 
 export const galryvdo1 = require('../assets/img/galry-vdo1.png');
 export const galryvdo2 = require('../assets/img/galry-vdo2.png');

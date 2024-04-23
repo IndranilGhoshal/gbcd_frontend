@@ -20,7 +20,7 @@ export default function page() {
   return (
     <>
 
-      <section className="banner-sec">
+      {/* <section className="banner-sec">
         <div className="container-fluid px-0">
           <OwlCarousel
             className="banner owl-carousel owl-theme owl-loaded owl-drag"
@@ -34,7 +34,7 @@ export default function page() {
 
           </OwlCarousel>
         </div>
-      </section>
+      </section> */}
 
       <section className="welcome-sec">
         <div className="container">

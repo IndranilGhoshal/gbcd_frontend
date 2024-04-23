@@ -1,13 +1,29 @@
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import Fancybox from "./fancybox.js";
-import { acknowimg1, galryimage1, galryimage2, galryimage3, galryimage4, galryimage5, galryimagel1, galryimagel2, galryimagel3, galryimagel4, galryimagel5, galryimg1, galryimg2, galryimg3, galryimg4, galryimg5, galryvdo1, galryvdo2, galryvdo3, innerbanner, newsbanner } from '../../images/images';
+import { acknowimg1, acknowimgnews1, acknowimgnews2, acknowimgnews3, acknowimgnews4, galryimage1, galryimage10, galryimage11, galryimage12, galryimage2, galryimage3, galryimage4, galryimage5, galryimage6, galryimage7, galryimage8, galryimage9, galryimagel1, galryimagel10, galryimagel11, galryimagel12, galryimagel2, galryimagel3, galryimagel4, galryimagel5, galryimagel6, galryimagel7, galryimagel8, galryimagel9, galryimg1, galryimg2, galryimg3, galryimg4, galryimg5, galryvdo1, galryvdo2, galryvdo3, innerbanner, newsbanner } from '../../images/images';
 
 export default function page() {
+    const options = {
+      responsive: {
+          0: {
+              items: 1,
+          },
+          600: {
+              items: 1,
+          },
+          1000: {
+              items: 3,
+          },
+      },
+  };
+
+
+
   return (
     <>
 
-      <section className="banner-sec">
+      {/* <section className="banner-sec">
         <div className="container-fluid px-0">
           <OwlCarousel
             className="banner owl-carousel owl-theme owl-loaded owl-drag"
@@ -21,7 +37,7 @@ export default function page() {
 
           </OwlCarousel>
         </div>
-      </section>
+      </section> */}
 
       <section className="welcome-sec">
         <div className="container">
@@ -36,59 +52,99 @@ export default function page() {
         <div className="container">
           <Fancybox>
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-4 mb-4">
                 <div className="thumbnail">
                   <a data-fancybox="gallery" href={galryimagel1}>
                     <img src={galryimage1} />
+                    <strong>Computer Training for Deaf Students using Sign Language</strong>
                   </a>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4 mb-4">
                 <div className="thumbnail">
-                  <a data-fancybox="gallery" data-preload="false" href="https://youtu.be/KNa798t1g08?si=U2WkUufxTKhaSqYc&amp;autoplay=0">
-                    <img src={galryvdo1} />
+                <a data-fancybox="gallery" href={galryimagel2}>
+                    <img src={galryimage2} />
+                    <strong>Cultural Programme during the celebration of International Day for Person with Disabilities</strong>
                   </a>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4 mb-4">
                 <div className="thumbnail">
                   <a data-fancybox="gallery" href={galryimagel2}>
-                    <img src={galryimage2} />
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="thumbnail">
-                  <a data-fancybox="gallery" href={galryimagel3}>
                     <img src={galryimage3} />
+                    <strong>Deaf Students attending Special Coaching Classes.</strong>
                   </a>
                 </div>
               </div>
-              <div className="col-md-3">
-                <div className="thumbnail">
-                  <a data-fancybox="gallery" data-preload="false" href="https://youtu.be/KNa798t1g08?si=U2WkUufxTKhaSqYc&amp;autoplay=0">
-                    <img src={galryvdo2} />
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-3">
+              <div className="col-md-4 mb-4">
                 <div className="thumbnail">
                   <a data-fancybox="gallery" href={galryimagel4}>
                     <img src={galryimage4} />
+                    <strong>Mime performance by deaf youngs of NIRBAK group.</strong>
                   </a>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4 mb-4">
                 <div className="thumbnail">
-                  <a data-fancybox="gallery" href={galryimagel5}>
+                <a data-fancybox="gallery" href={galryimagel5}>
                     <img src={galryimage5} />
+                    <strong>New cloth distribution on the occassion of Durga Puja.</strong>
                   </a>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4 mb-4">
                 <div className="thumbnail">
-                  <a data-fancybox="gallery" data-preload="false" href="https://youtu.be/wuPpCFXzCoM?si=2wd4uHL15M2DLhbI&amp;autoplay=0">
-                    <img src={galryvdo3} />
+                  <a data-fancybox="gallery" href={galryimagel6}>
+                    <img src={galryimage6} />
+                    <strong>Short stay Camp for children with Cerebral Palsy</strong>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="thumbnail">
+                  <a data-fancybox="gallery" href={galryimagel7}>
+                    <img src={galryimage7} />
+                    <strong>Short stay Camp for children with Hearing Impaired</strong>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="thumbnail">
+                  <a data-fancybox="gallery" href={galryimagel8}>
+                    <img src={galryimage8} />
+                    <strong>Short stay Camp for children with Intellectual Disabilities</strong>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="thumbnail">
+                  <a data-fancybox="gallery" href={galryimagel9}>
+                    <img src={galryimage9} />
+                    <strong>Walk during Deaf week celebration</strong>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="thumbnail">
+                  <a data-fancybox="gallery" href={galryimagel10}>
+                    <img src={galryimage10} />
+                    <strong>Wipro Spirit of Run</strong>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="thumbnail">
+                  <a data-fancybox="gallery" href={galryimagel11}>
+                    <img src={galryimage11} />
+                    <strong>Concentration exercise</strong>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <div className="thumbnail">
+                  <a data-fancybox="gallery" href={galryimagel12}>
+                    <img src={galryimage12} />
+                    <strong>Special Class for Autistic Children</strong>
                   </a>
                 </div>
               </div>
@@ -99,19 +155,34 @@ export default function page() {
       </section>
 
       <section className="accreditation-sec pb-5">
-        <h3>Accreditation</h3>
+      <div className="welcome-sec-inr">
+      <h3 className="fade-in"><span>GBCD </span>in News</h3>
+      </div>
         <div className="container">
           <OwlCarousel
             className="owl-carousel owl-theme owl-loaded owl-drag"
-            items={1}
+            items={3}
             autoplay={true}
             dots={false}
             loop={true}
             margin={14}
+            {...options}
+
+
           >
-            <div className='w-50 mx-auto'><img src={acknowimg1} /></div>
+            <div className='heig'><img src={acknowimgnews1} /></div>
+            <div className='heig'><img src={acknowimgnews2} /></div>
+            <div className='heig'><img src={acknowimgnews3} /></div>
+            <div className='heig'><img src={acknowimgnews4} /></div>
 
           </OwlCarousel>
+        </div>
+      </section>
+
+      <section className="accreditation-sec pb-4">
+        <h3>Accreditation</h3>
+        <div className="container">
+            <div className='accreditation-sec-inr'><img src={acknowimg1} /></div>
         </div>
       </section>
 

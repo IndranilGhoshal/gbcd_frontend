@@ -112,6 +112,7 @@ export default function page(props) {
                     <li><a onClick={() => { props.goto('/programmes') }}>Rehabilitation</a></li>
                     <li><a onClick={() => { props.goto('/programmes') }}>Economic Placement</a></li>
                     <li><a onClick={() => { props.goto('/programmes') }}>Empowerment</a></li>
+                    <li><a onClick={() => { props.goto('/programmes') }}>Arrangement</a></li>
                   </ul>
                 </div>
 

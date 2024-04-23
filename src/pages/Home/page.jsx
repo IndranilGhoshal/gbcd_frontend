@@ -19,42 +19,42 @@ export default function Page(props) {
         cssEase: "linear",
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 8,
-                slidesToScroll: 1,
-              }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                }
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              }
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
             },
             {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
-              }
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
             }
-          ]
+        ]
     };
 
     const options = {
         responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 3,
-          },
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 3,
+            },
         },
-      };
+    };
 
     const [show, setShow] = useState(false);
 
@@ -76,7 +76,7 @@ export default function Page(props) {
                     >
                         <div>
                             <div className="ban-cont">
-                                <strong>Early Identification</strong>
+                                <strong>Early Identification & Intervention</strong>
                                 {/* <p>for mainstreaming & empowering children
                                     <br />
                                     & persons with Disabilities</p> */}
@@ -94,7 +94,7 @@ export default function Page(props) {
                         </div>
                         <div>
                             <div className="ban-cont">
-                                <strong>Placement </strong>
+                                <strong>Community Based Rehabilitation </strong>
                                 {/* <p>for mainstreaming & empowering children
                                     <br />
                                     & persons with Disabilities</p> */}
@@ -103,7 +103,7 @@ export default function Page(props) {
                         </div>
                         <div>
                             <div className="ban-cont">
-                                <strong>Community Based Rehabilitation</strong>
+                                <strong>Economic Placement</strong>
                                 {/* <p>for mainstreaming & empowering children
                                     <br />
                                     & persons with Disabilities</p> */}
@@ -247,7 +247,7 @@ export default function Page(props) {
                     <div className="video-sec-content">
                         <div className="tile" id="facebook_1">
                             <div className="tile__media">
-                            <a id="play-video" className="video-play-button tile__img" src={videoicn} alt="" onClick={() => { handleShow() }}><span></span></a>
+                                <a id="play-video" className="video-play-button tile__img" src={videoicn} alt="" onClick={() => { handleShow() }}><span></span></a>
                             </div>
                         </div>
                     </div>
@@ -309,14 +309,14 @@ export default function Page(props) {
                                         <span>Director</span>
                                     </article>
                                 </div>
-                                <div className="tstimo-Div">
+                                {/* <div className="tstimo-Div">
                                     <span className="tst-icn"><img src={ttmicn} /></span>
                                     <p>We work for the rural poor, for whom, not disability but earning two meals a day is the first priority. Please come forward and join us. Our effort and your support can make the change sustainable.</p>
                                     <article>
                                     <strong>SK Mansur Ali</strong>
                                         <span>Director</span>
                                     </article>
-                                </div>
+                                </div> */}
 
                             </OwlCarousel>
                         </div>

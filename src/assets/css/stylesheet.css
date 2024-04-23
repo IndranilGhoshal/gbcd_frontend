@@ -420,16 +420,23 @@ button:focus {
 
 .ban-cont {
     position: absolute;
-    top: 30%;
+    bottom: -50%;
     width: 100%;
     text-align: center;
+    transition: all 0.45s ease 0s;
+    opacity: 0;
+}
+.active .ban-cont{
+    bottom: 30%;
+    transition-delay: 0.9s;
+    opacity: 1;
 }
 
 .ban-cont strong {
     color: #fff;
-    font-size: 76px;
+    font-size: 50px;
     line-height: 80px;
-    font-weight: 300;
+    font-weight: 500;
     display: block;
 }
 
@@ -733,12 +740,13 @@ button:focus {
 
 .media-news-DIV strong {
     color: #1b292c;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500;
     display: block;
     margin: 20px 0;
     min-height: 76px;
+    text-align: center;
 }
 
 .media-news-DIV p {
@@ -795,14 +803,19 @@ button:focus {
 
 
 /* Video Sec Css */
-.hom-vdeo-body.modal-body video{width: 100%; height: auto;}
+.hom-vdeo-body.modal-body video {
+    width: 100%;
+    height: auto;
+}
+
 .hom-vdeo.modal-header {
     border: 1px solid #fff;
     border-radius: 50%;
     width: 20px;
     height: 20px;
-  }
-  .hom-vdeo.modal-header .btn-close {
+}
+
+.hom-vdeo.modal-header .btn-close {
     padding: 0;
     filter: brightness(0) invert(1);
     font-size: 18px;
@@ -810,7 +823,8 @@ button:focus {
     width: 10px;
     height: 10px;
     margin: 0 auto;
-  }
+}
+
 .video-sec {
     position: relative;
 }
@@ -1569,10 +1583,15 @@ screen and (max-height:300px) {
 
 span.tst-icn {
     display: block;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .owl-carousel .owl-item span.tst-icn img {
+    height: 100%;
     width: auto;
 }
 
@@ -1738,6 +1757,7 @@ span.tst-icn {
     border-bottom: 1px dashed #777777;
     display: block;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .foot-top-sec h4 {
@@ -2245,10 +2265,108 @@ span.tst-icn {
         transform: rotate(359deg);
     }
 }
+
 button.owl-next:hover,
 button.owl-prev:hover {
     background: transparent !important;
-  }
+}
+
+.inst-base-inner ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.inst-base-inner .histry-cont {
+    width: 100%;
+    text-align: center;
+}
+
+.inst-base-inner .histry-cont p {
+    text-align-last: center;
+}
+
+.inst-base-inner ul li img {
+    width: 100%;
+}
+
+.inst-base-inner ul li {
+    width: 32%;
+    margin-bottom: 20px;
+}
+.thumbnail strong{
+    color: #1b292c;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 14px 10px;
+    text-align: center;
+    background-color: #eee;
+    min-height: 88px;
+}
+.inst-base-inner ul li strong {
+    color: #1b292c;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 14px 0;
+    text-align: center;
+    background-color: #eee;
+    min-height: 69px;
+}
+
+.accreditation-sec-inr img {
+    width: 100%;
+}
+
+.accreditation-sec-inr {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.heig img {
+    height: 100%;
+}
+
+.cont-map a {
+    position: relative;
+    height: 20px;
+    display: block;
+}
+
+.cont-map a.balag {
+    top: -423px;
+    right: -643px;
+    width: 63px;
+}
+
+.cont-map a.pandu {
+    top: -413px;
+    right: -512px;
+    width: 50px;
+}
+
+.cont-map a.polba {
+    top: -334px;
+    right: -511px;
+    width: 92px;
+}
+
+.cont-map a.dhali {
+    top: -373px;
+    right: -389px;
+    width: 80px;
+}
 
 /* Responsive Css */
 @media screen and (max-width:944px) {
@@ -2280,8 +2398,8 @@ button.owl-prev:hover {
         color: #191818;
     }
 
-    #cssmenu > ul > li > a.active,
-    #cssmenu > ul > li > a:hover {
+    #cssmenu>ul>li>a.active,
+    #cssmenu>ul>li>a:hover {
         color: #fff;
         background-color: #ff5a00;
     }
@@ -2414,14 +2532,19 @@ button.owl-prev:hover {
         background: #191818;
         z-index: 99;
     }
-    #cssmenu .submenu-button:hover::before, #cssmenu .submenu-button:hover::after{background: #fff;}
+
+    #cssmenu .submenu-button:hover::before,
+    #cssmenu .submenu-button:hover::after {
+        background: #000;
+    }
+
     #cssmenu .submenu-button.submenu-opened:after {
         display: none;
     }
 
     .ban-cont strong {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: 36px;
     }
 
     .top-nav .col-md-6.col-sm-6 {
@@ -2437,7 +2560,7 @@ button.owl-prev:hover {
     }
 
     .ban-cont {
-        top: 15%;
+        bottom: 15%;
         width: 92%;
         left: 0;
         right: 0;
@@ -2665,23 +2788,34 @@ button.owl-prev:hover {
     #tstimo_caro {
         padding: 20px 20px;
     }
+
     .media-news-left {
         width: 100%;
         padding: 10px;
         text-align: center;
-      }
-      .media-news-inner{display: block;}
-      #media_caro{width: 100%;}
-      #media_caro .owl-nav {
+    }
+
+    .media-news-inner {
+        display: block;
+    }
+
+    #media_caro {
+        width: 100%;
+    }
+
+    #media_caro .owl-nav {
         bottom: inherit;
         top: -52px;
         right: 0;
         left: 0;
-      }
-      .video-play-button::after,
-      .video-play-button::before {
-        width: 40px;height: 40px;  
     }
+
+    .video-play-button::after,
+    .video-play-button::before {
+        width: 40px;
+        height: 40px;
+    }
+
     .video-play-button span {
         border-left: 10px solid #fff;
         border-top: 10px solid transparent;
@@ -2690,31 +2824,37 @@ button.owl-prev:hover {
         top: 14px;
         right: 0;
         margin: 0 auto;
-      }
-      .video-play-button {
+    }
+
+    .video-play-button {
         padding: 0;
-      }
-      .video-sec-content p {
+    }
+
+    .video-sec-content p {
         font-size: 10px !important;
         line-height: 14px !important;
         margin: 10px auto;
         width: 90%;
-      }
-      .video-sec-content .btn.btn-redmor {
+    }
+
+    .video-sec-content .btn.btn-redmor {
         padding: 2px 14px;
         font-size: 10px;
-      }
-      .hom-vdeo-body.modal-body video {
+    }
+
+    .hom-vdeo-body.modal-body video {
         width: 100%;
         height: auto;
-      }
-      .hom-vdeo.modal-header {
+    }
+
+    .hom-vdeo.modal-header {
         border: 1px solid #fff;
         border-radius: 50%;
         width: 20px;
         height: 20px;
-      }
-      .hom-vdeo.modal-header .btn-close {
+    }
+
+    .hom-vdeo.modal-header .btn-close {
         padding: 0;
         filter: brightness(0) invert(1);
         font-size: 18px;
@@ -2722,15 +2862,85 @@ button.owl-prev:hover {
         width: 10px;
         height: 10px;
         margin: 0 auto;
-      }
-      #cssmenu > ul > li > a {
+    }
+
+    #cssmenu>ul>li>a {
         padding: 0px 22px;
         font-size: 14px;
         line-height: 40px;
-      }
-      .media-news-DIV strong {min-height:auto;}
-      .histry-img img {
+    }
+
+    .media-news-DIV strong {
+        min-height: auto;
+    }
+
+    .histry-img img {
         width: 100%;
     }
-    .catgry-sec-DIV.img-Div img {height: auto;}
-    }      
+
+    .catgry-sec-DIV.img-Div img {
+        height: auto;
+    }
+
+    .inst-base-inner ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .accreditation-sec-inr {
+        width: 100%;
+
+    }
+
+    .accreditation-sec.pb-5 {
+        padding-bottom: 0 !important;
+    }
+
+    .contact-form .row.mb-5 {
+        margin-bottom: 0 !important;
+    }
+
+    .contact-form .row.pb-5 .col-md-4.col-sm-12.position-relative,
+    .contact-form .row.mb-5 .col-md-4.col-sm-12.position-relative {
+        margin-bottom: 10px !important;
+    }
+
+    .contact-form .btn.btn-subm {
+        margin-top: 10px;
+    }
+
+    .cont-map a.balag {
+        top: -263px;
+        right: -390px;
+        width: 43px;
+    }
+
+    .cont-map a.pandu {
+        top: -264px;
+        right: -308px;
+        width: 40px;
+    }
+
+    .cont-map a.polba {
+        top: -224px;
+        right: -307px;
+        width: 64px;
+    }
+
+    .cont-map a.dhali {
+        top: -254px;
+        right: -235px;
+        width: 55px;
+    }
+
+    .foot_mnu_l:nth-child(2) ul li:nth-child(5),
+    .foot_mnu_l:nth-child(2) ul li:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cont-map a {
+        display: none;
+    }
+}

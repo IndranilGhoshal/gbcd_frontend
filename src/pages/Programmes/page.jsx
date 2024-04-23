@@ -5,7 +5,7 @@ import { innerbanner, progmimg1, progmimg2, progmimg3, progmimg4, progmimg5, pro
 export default function page() {
   return (
     <>
-    <section className="banner-sec">
+    {/* <section className="banner-sec">
         <div className="container-fluid px-0">
           <OwlCarousel
             className="banner owl-carousel owl-theme owl-loaded owl-drag"
@@ -19,7 +19,7 @@ export default function page() {
 
           </OwlCarousel>
         </div>
-      </section>
+      </section> */}
     
 
     <section className="programmes-sec">
@@ -33,7 +33,7 @@ export default function page() {
                         </div>
                         <div className="programmes-cont">
                             <h4 className="fade-in">Awareness</h4>
-                            <p className="fade-in">Even in this 21st century the children and persons with disabilities are treated as the burden of the family and deprived of their rights in our society. Especially in rural areas people are not aware of their rights & entitlements and cannot access the scientific intervention process of disability rehabilitation. Through our various programmes we try to create adequate awareness among the rural people on their potential & rights. (pictures)(Rally, village meeting, street mime)</p>
+                            <p className="fade-in">Even in this 21st century the children and persons with disabilities are treated as the burden of the family and deprived of their rights in our society. Especially in rural areas people are not aware of their rights & entitlements and cannot access the scientific intervention process of disability rehabilitation. Through our various programmes we try to create adequate awareness among the rural people on their potential & rights.</p>
                         </div>
                     </li>
                     <li>
